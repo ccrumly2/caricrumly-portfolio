@@ -30,6 +30,11 @@
       text-align: center;
       padding: 2rem 0;
     }
+    header img {
+      border-radius: 50%;
+      width: 150px;
+      margin-top: 1rem;
+    }
     nav a {
       margin: 0 1rem;
       text-decoration: none;
@@ -87,13 +92,34 @@
       0%, 100% { transform: translateY(0); }
       50% { transform: translateY(-8px); }
     }
+    .typewriter {
+      overflow: hidden;
+      border-right: .15em solid orange;
+      white-space: nowrap;
+      margin: 0 auto;
+      animation:
+        typing 3s steps(40, end),
+        blink-caret .75s step-end infinite;
+      max-width: 100%;
+    }
+
+    @keyframes typing {
+      from { width: 0 }
+      to { width: 100% }
+    }
+
+    @keyframes blink-caret {
+      from, to { border-color: transparent }
+      50% { border-color: orange; }
+    }
   </style>
 </head>
 <body>
   <div class="wrapper">
     <header>
-      <h1>Cari Crumly | Instructional Design & Learning Experience Portfolio</h1>
+      <h1 class="typewriter">Cari Crumly | Instructional Design & Learning Experience Portfolio</h1>
       <p>Learning is my jam. Building skills is my superpower.</p>
+      <img src="87ab9c0c-1933-45b7-ae30-8bb0012db5dd.jpg" alt="Photo of Cari Crumly">
       <nav>
         <a href="#projects">Projects</a>
         <a href="#about">About</a>
@@ -103,7 +129,6 @@
 
     <section id="projects">
       <h2>Featured Projects</h2>
-
       <div class="project">
         <h3>Learning & Memory Micro-Lesson</h3>
         <p><strong>Role:</strong> Instructional Designer & Developer<br>
@@ -161,9 +186,9 @@
 
     <section id="about">
       <h2>About Me</h2>
-      <p>I’m an Instructional Designer, Project Manager, and Educator who’s passionate about helping people grow. I currently teach undergraduate and graduate courses in Instructional Design & Technology at University of Arizona Global Campus, and I teach (volunteer) Capstone Chair and Master students at University of the People.</p>
-      <p>I design with learners in mind; combining learning science, empathy, and a splash of quirk. My favorite tools include H5P, Canva, Smartsheets, HTML/CSS basics, Articulate Rise, and Animaker (though I have had the privilege of working with a number of other design tools as well).</p>
-      <p class="quirky">Fun facts: I adore turtles, light up LEGO Harry Potter sets (literally).</p>
+      <p>I’m an Instructional Designer, Project Manager, and Educator who’s passionate about helping people grow. I currently teach undergraduate and graduate courses in Instructional Design & Technology at University of Arizona Global Campus, and I teach (volunteer) Capstone Chair and Master education students at University of the People.</p>
+      <p>I design with learners in mind, combining learning science, empathy, and a splash of quirk. My favorite tools include H5P, Canva, Smartsheets, HTML/CSS basics, Articulate Rise, and Animaker (though I have had the privilege of working with a number of other design tools as well).</p>
+      <p class="quirky">Fun facts: I adore turtles and building, designing, and lighting up LEGO Harry Potter sets (literally). If I don't know how I will learn, that's just how I roll.</p>
     </section>
 
     <section id="contact">
@@ -172,6 +197,7 @@
     </section>
   </div>
 
-  <div class="turtle" onclick="alert('Latch hook > crochet? Discuss. 🐢✨')">🐢</div>
+  <div class="turtle" onclick="alert('Designing one stitch at a time 🧶🐢 — whether it’s learning paths or crochet patterns, thoughtful design gets learners across the finish line.')">🐢</div>
 </body>
+
 </html>
