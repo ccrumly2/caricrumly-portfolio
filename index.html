@@ -92,17 +92,17 @@
       0%, 100% { transform: translateY(0); }
       50% { transform: translateY(-8px); }
     }
-    .typewriter {
-      overflow: hidden;
-      border-right: .15em solid orange;
-      white-space: nowrap;
-      margin: 0 auto;
-      animation:
-        typing 3s steps(40, end),
-        blink-caret .75s step-end infinite;
-      max-width: 100%;
-    }
-
+   .typewriter {
+  overflow: hidden;
+  border-right: .15em solid orange;
+  white-space: normal;
+  display: inline-block;
+  word-break: break-word;
+  animation:
+    typing 3s steps(40, end),
+    blink-caret .75s step-end infinite;
+  max-width: 100%;
+}
     @keyframes typing {
       from { width: 0 }
       to { width: 100% }
